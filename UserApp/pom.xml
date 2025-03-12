@@ -1,3 +1,4 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -20,12 +21,11 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.release>17</maven.compiler.release> <!-- Java 17 để tránh lỗi -->
+        <maven.compiler.release>17</maven.compiler.release>
     </properties>
 
     <build>
         <plugins>
-            <!-- Plugin để tạo file JAR với Main-Class -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
@@ -33,7 +33,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>com.mycompany.userapp.UserApp</mainClass>
+                            <mainClass>com.mycompany.userapp.User</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
